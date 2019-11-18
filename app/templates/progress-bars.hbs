@@ -1,0 +1,35 @@
+{{outlet}}
+<div class="row text-center">
+  <div class="col-md-12">
+    <h2>Progress Bars Demo</h2>
+  </div>
+</div>
+<div class="container">
+  <div class="progress-bar-div">
+    {{#each model.barArray as | bar index|}}
+      <div class="progress {{if (gt bar.value model.limit) 'over-limit' 'in-limit'}}">
+        <div class="progress-bar" role="progressbar" style="width: {{bar.width}}%" aria-valuenow="{{bar.width}}"
+          aria-valuemin="0" aria-valuemax="{{bar.limit}}"></div>
+        <span class="progress-value">{{bar.value}}%</span>
+      </div>
+    {{/each}}
+  </div>
+  <div class="row">
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+      <div class="progress-bar-selection">
+        <select class="select-bar" onchange={{action 'barSelection' value='target.value'}}>
+          {{#each model.barArray as | bar index|}}
+            <option value={{index}}>progressbar - {{bar.order}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+      <div class="button-div">
+        {{#each model.buttonArray as | button index|}}
+          <a class="button-span btn btn-outline-primary" href="javascript:void(0)" {{action "updateBarValue" button}}>{{button}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
