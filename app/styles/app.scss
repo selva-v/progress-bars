@@ -9,6 +9,7 @@ h2 {
   margin: 0 0 20px;
   width: 100%;
   height: 1.5rem;
+  position: relative;
 
   .progress-bar {
     background-color: #e9ecef;
@@ -22,6 +23,7 @@ h2 {
     text-align: center;
     width: 100%;
     line-height: 24px;
+    font-weight: bold;
   }
 
   &.in-limit {
