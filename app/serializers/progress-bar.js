@@ -1,6 +1,6 @@
-import ApplicationSerializer from "./application";
+import DS from 'ember-data';
 
-export default ApplicationSerializer.extend({
+export default DS.JSONAPISerializer.extend({
   normalizeResponse(store, primaryModelClass, payload) {
     let data = {};
     data.id = "bar-1";
