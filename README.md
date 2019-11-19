@@ -1,7 +1,8 @@
 # progress-bars
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An app to get data from endpoint and create progress bars with progress value, limit and a set of controls.
+
+
 
 ## Prerequisites
 
