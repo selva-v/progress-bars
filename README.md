@@ -2,7 +2,7 @@
 
 An app to get data from endpoint and create progress bars with progress value, limit and a set of controls.
 
-![image](https://user-images.githubusercontent.com/20811356/69165878-3e9afd00-0b2d-11ea-9454-16100ab91584.png)
+![image](https://user-images.githubusercontent.com/20811356/69166125-b36e3700-0b2d-11ea-9eea-69dead4b16e5.png)
 
 ## Prerequisites
 
