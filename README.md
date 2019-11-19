@@ -2,8 +2,6 @@
 
 An app to get data from endpoint and create progress bars with progress value, limit and a set of controls.
 
-
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
