@@ -9,7 +9,7 @@
     {{#each model.barArray as | bar |}}
       <div class="progress {{if (gt bar.value model.limit) "over-limit" "in-limit"}}">
         <div class="progress-bar" style="width: {{bar.width}}%" aria-valuenow={{bar.width}} aria-valuemin="0" aria-valuemax={{bar.limit}}></div>
-        <span class="progress-value">{{bar.value}}%</span>
+        <span class="progress-value">{{bar.width}}%</span>
       </div>
     {{/each}}
   </div>
