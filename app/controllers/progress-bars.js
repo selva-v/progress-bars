@@ -12,7 +12,7 @@ export default Controller.extend({
       let newVal = selectedBar.value + value;
       let computedWidth = 0;
       if (newVal >= 0) {
-        computedWidth = (newVal / this.model.get("limit")) * 100;
+        computedWidth = parseInt((newVal / this.model.get("limit")) * 100);
       } else {
         newVal = 0;
       }
