@@ -14,7 +14,7 @@ export default Route.extend({
     model.get("bars").forEach((bar, index) => {
       let barObj = {};
       barObj.value = bar;
-      barObj.width = (bar / model.get("limit")) * 100;
+      barObj.width = parseInt((bar / model.get("limit")) * 100);
       barObj.order = index + 1;
       barArray.push(barObj);
     });
